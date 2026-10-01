@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import apple from "../assets/images/apple.jpg";
+import banana from "../assets/images/banana.jpg";
+import tomato from "../assets/images/tomato.jpg";
+import carrot from "../assets/images/carrot.jpg";
+import milk from "../assets/images/milk.jpg";
+import bread from "../assets/images/bread.jpg";
 
 
 function Home({ addToCart }) {
@@ -12,7 +18,7 @@ function Home({ addToCart }) {
       category: "Fruits",
       price: 120,
       unit: "1 kg",
-      image: "/src/assets/images/apple.jpg"
+      image: apple
     },
 
     {
@@ -21,7 +27,7 @@ function Home({ addToCart }) {
       category: "Fruits",
       price: 60,
       unit: "1 dozen",
-      image: "/src/assets/images/banana.jpg"
+      image: banana
     },
 
     {
@@ -30,7 +36,7 @@ function Home({ addToCart }) {
       category: "Vegetables",
       price: 45,
       unit: "1 kg",
-      image: "/src/assets/images/tomato.jpg"
+      image: tomato
     },
 
     {
@@ -39,7 +45,7 @@ function Home({ addToCart }) {
       category: "Vegetables",
       price: 55,
       unit: "1 kg",
-      image: "/src/assets/images/carrot.jpg"
+      image: carrot
     },
 
     {
@@ -48,7 +54,7 @@ function Home({ addToCart }) {
       category: "Dairy",
       price: 65,
       unit: "1 litre",
-      image: "/src/assets/images/milk.jpg"
+      image: milk
     },
 
     {
@@ -57,7 +63,7 @@ function Home({ addToCart }) {
       category: "Bakery",
       price: 50,
       unit: "400 g",
-      image: "/src/assets/images/bread.jpg"
+      image: bread
     }
 
   ];
@@ -135,7 +141,7 @@ function Home({ addToCart }) {
               <div className="hero-image-wrapper">
 
                 <img
-                  src="/src/assets/images/apple.jpg"
+                  src={apple}
                   alt="Fresh groceries"
                   className="hero-image"
                 />
@@ -305,7 +311,7 @@ function Home({ addToCart }) {
               <div className="category-card">
 
                 <img
-                  src="/src/assets/images/apple.jpg"
+                  src={apple}
                   alt="Fruits"
                 />
 
@@ -327,7 +333,7 @@ function Home({ addToCart }) {
               <div className="category-card">
 
                 <img
-                  src="/src/assets/images/carrot.jpg"
+                  src={carrot}
                   alt="Vegetables"
                 />
 
@@ -349,7 +355,7 @@ function Home({ addToCart }) {
               <div className="category-card">
 
                 <img
-                  src="/src/assets/images/milk.jpg"
+                  src={milk}
                   alt="Dairy"
                 />
 
@@ -371,7 +377,7 @@ function Home({ addToCart }) {
               <div className="category-card">
 
                 <img
-                  src="/src/assets/images/bread.jpg"
+                  src={bread}
                   alt="Bakery"
                 />
 

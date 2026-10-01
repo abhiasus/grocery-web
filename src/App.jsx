@@ -392,7 +392,7 @@ function App() {
 
   return (
 
-    <BrowserRouter basename="/grocery-web">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
 
       <Navbar
         cartCount={cartCount}

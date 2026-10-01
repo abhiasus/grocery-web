@@ -1,4 +1,16 @@
 import React, { useState } from "react";
+import apple from "../assets/images/apple.jpg";
+import banana from "../assets/images/banana.jpg";
+import tomato from "../assets/images/tomato.jpg";
+import carrot from "../assets/images/carrot.jpg";
+import milk from "../assets/images/milk.jpg";
+import bread from "../assets/images/bread.jpg";
+import rice from "../assets/images/rice.jpg";
+import eggs from "../assets/images/eggs.jpg";
+import spinach from "../assets/images/spinach.jpg";
+import juice from "../assets/images/juice.jpg";
+import chips from "../assets/images/chips.jpg";
+import honey from "../assets/images/honey.jpg";
 
 
 function Product({ addToCart }) {
@@ -11,7 +23,7 @@ function Product({ addToCart }) {
       category: "Fruits",
       price: 120,
       unit: "1 kg",
-      image: "/src/assets/images/apple.jpg"
+      image: apple
     },
 
     {
@@ -20,7 +32,7 @@ function Product({ addToCart }) {
       category: "Fruits",
       price: 60,
       unit: "1 dozen",
-      image: "/src/assets/images/banana.jpg"
+      image: banana
     },
 
     {
@@ -29,7 +41,7 @@ function Product({ addToCart }) {
       category: "Vegetables",
       price: 45,
       unit: "1 kg",
-      image: "/src/assets/images/tomato.jpg"
+      image: tomato
     },
 
     {
@@ -38,7 +50,7 @@ function Product({ addToCart }) {
       category: "Vegetables",
       price: 55,
       unit: "1 kg",
-      image: "/src/assets/images/carrot.jpg"
+      image: carrot
     },
 
     {
@@ -47,7 +59,7 @@ function Product({ addToCart }) {
       category: "Dairy",
       price: 65,
       unit: "1 litre",
-      image: "/src/assets/images/milk.jpg"
+      image: milk
     },
 
     {
@@ -56,7 +68,7 @@ function Product({ addToCart }) {
       category: "Bakery",
       price: 50,
       unit: "400 g",
-      image: "/src/assets/images/bread.jpg"
+      image: bread
     },
 
     {
@@ -65,7 +77,7 @@ function Product({ addToCart }) {
       category: "Staples",
       price: 160,
       unit: "1 kg",
-      image: "/src/assets/images/rice.jpg"
+      image: rice
     },
 
     {
@@ -74,7 +86,7 @@ function Product({ addToCart }) {
       category: "Dairy",
       price: 90,
       unit: "6 pcs",
-      image: "/src/assets/images/eggs.jpg"
+      image: eggs
     },
 
     {
@@ -83,7 +95,7 @@ function Product({ addToCart }) {
       category: "Vegetables",
       price: 35,
       unit: "250 g",
-      image: "/src/assets/images/spinach.jpg"
+      image: spinach
     },
 
     {
@@ -92,7 +104,7 @@ function Product({ addToCart }) {
       category: "Beverages",
       price: 110,
       unit: "1 litre",
-      image: "/src/assets/images/juice.jpg"
+      image: juice
     },
 
     {
@@ -101,7 +113,7 @@ function Product({ addToCart }) {
       category: "Snacks",
       price: 40,
       unit: "100 g",
-      image: "/src/assets/images/chips.jpg"
+      image: chips
     },
 
     {
@@ -110,7 +122,7 @@ function Product({ addToCart }) {
       category: "Staples",
       price: 180,
       unit: "250 g",
-      image: "/src/assets/images/honey.jpg"
+      image: honey
     }
 
   ];

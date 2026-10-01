@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 function Contact() {
@@ -310,12 +311,12 @@ function Contact() {
 
             </div>
 
-            <a href="/products">
+            <Link to="/products">
               Start Shopping
 
               <i className="bi bi-arrow-right"></i>
 
-            </a>
+            </Link>
 
           </div>
 
