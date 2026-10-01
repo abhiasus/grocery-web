@@ -137,8 +137,6 @@ function Footer() {
 
         <div className="row g-4">
 
-          {/* BRAND */}
-
           <div className="col-lg-4 col-md-6">
 
             <h3 className="footer-brand">
@@ -181,8 +179,6 @@ function Footer() {
           </div>
 
 
-          {/* QUICK LINKS */}
-
           <div className="col-lg-2 col-md-6">
 
             <h5 className="footer-heading">
@@ -212,8 +208,6 @@ function Footer() {
           </div>
 
 
-          {/* CATEGORIES */}
-
           <div className="col-lg-2 col-md-6">
 
             <h5 className="footer-heading">
@@ -242,8 +236,6 @@ function Footer() {
 
           </div>
 
-
-          {/* CONTACT */}
 
           <div className="col-lg-4 col-md-6">
 
@@ -400,7 +392,7 @@ function App() {
 
   return (
 
-    <BrowserRouter>
+    <BrowserRouter basename="/grocery-web">
 
       <Navbar
         cartCount={cartCount}
