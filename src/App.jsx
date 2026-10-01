@@ -34,9 +34,11 @@ function Navbar({ cartCount }) {
           className="navbar-brand brand-name"
           to="/"
         >
+
           <i className="bi bi-basket-fill"></i>
 
           Fresh<span>Basket</span>
+
         </Link>
 
 
@@ -49,7 +51,9 @@ function Navbar({ cartCount }) {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
+
           <i className="bi bi-list"></i>
+
         </button>
 
 
@@ -122,6 +126,7 @@ function Navbar({ cartCount }) {
       </div>
 
     </nav>
+
   );
 }
 
@@ -137,6 +142,7 @@ function Footer() {
 
         <div className="row g-4">
 
+
           <div className="col-lg-4 col-md-6">
 
             <h3 className="footer-brand">
@@ -146,6 +152,7 @@ function Footer() {
               Fresh<span>Basket</span>
 
             </h3>
+
 
             <p className="footer-description">
 
@@ -179,11 +186,13 @@ function Footer() {
           </div>
 
 
+
           <div className="col-lg-2 col-md-6">
 
             <h5 className="footer-heading">
               Quick Links
             </h5>
+
 
             <ul className="footer-links">
 
@@ -208,11 +217,13 @@ function Footer() {
           </div>
 
 
+
           <div className="col-lg-2 col-md-6">
 
             <h5 className="footer-heading">
               Categories
             </h5>
+
 
             <ul className="footer-links">
 
@@ -237,30 +248,40 @@ function Footer() {
           </div>
 
 
+
           <div className="col-lg-4 col-md-6">
 
             <h5 className="footer-heading">
               Contact Us
             </h5>
 
+
             <div className="footer-contact">
 
               <p>
+
                 <i className="bi bi-geo-alt-fill"></i>
 
                 Bangalore, Karnataka, India
+
               </p>
 
+
               <p>
+
                 <i className="bi bi-telephone-fill"></i>
 
                 +91 98765 43210
+
               </p>
 
+
               <p>
+
                 <i className="bi bi-envelope-fill"></i>
 
                 support@freshbasket.com
+
               </p>
 
             </div>
@@ -288,6 +309,7 @@ function Footer() {
       </div>
 
     </footer>
+
   );
 }
 
@@ -326,12 +348,14 @@ function App() {
 
 
       return [
+
         ...currentCart,
 
         {
           ...product,
           quantity: 1
         }
+
       ];
 
     });
@@ -379,7 +403,9 @@ function App() {
 
 
   const clearCart = () => {
+
     setCart([]);
+
   };
 
 
@@ -392,7 +418,7 @@ function App() {
 
   return (
 
-    <HashRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter>
 
       <Navbar
         cartCount={cartCount}
@@ -402,6 +428,7 @@ function App() {
       <main>
 
         <Routes>
+
 
           <Route
             path="/"
@@ -443,6 +470,7 @@ function App() {
             }
           />
 
+
         </Routes>
 
       </main>
@@ -451,7 +479,9 @@ function App() {
       <Footer />
 
     </HashRouter>
+
   );
+
 }
 
 
