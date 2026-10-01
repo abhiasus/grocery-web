@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   Link,
@@ -392,7 +392,7 @@ function App() {
 
   return (
 
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter basename={import.meta.env.BASE_URL}>
 
       <Navbar
         cartCount={cartCount}
@@ -450,7 +450,7 @@ function App() {
 
       <Footer />
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
