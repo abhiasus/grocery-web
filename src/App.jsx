@@ -276,7 +276,7 @@ function Footer() {
               <p>
                 <i className="bi bi-telephone-fill"></i>
 
-                +91 98765 43210
+                +91 1111 11111
               </p>
 
               <p>
